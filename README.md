@@ -1,17 +1,29 @@
-# Project Full-Stack + AWS
+# Project - DevOps: Full-Stack + AWS
+
+## Requirements
+
+- [Python 3.8](https://www.python.org/downloads/release/python-380/)
+- [Virtualenv](https://pypi.org/project/virtualenv/)
+- A terminal capable of running bash scripts
 
 ## Getting Started
 
-- Create a virtual environment using [virtualenv](https://pypi.org/project/virtualenv/): `virtualenv venv -p python3.8`
+This project uses a [Makefile](makefile) to help you sort out everything you might want.
+
+**Disclaimers**
+
+> 1. Make sure you're in the root directory.
+> 2. You will need to give 'execute' permissions to `python-setup.sh`. [Read more about this](https://bash.cyberciti.biz/guide/Setting_up_permissions_on_a_script).
+
+- First-time setup: `make setup`.
+- TODO: setup a way to sync pip packages.
+
+### Debugging
+
 - Activate your environment: `source venv/bin/activate`
-- Install project dependencies: `pip install -r requirements.txt`
-- To run the program locally, see [Debugging](#debugging)
-
-## Debugging
-
-> **Important**: Make sure you're in the root directory.
-
-- Set up your `PYTHONPATH` environment variable: `export PYTHONPATH="/project-devops-aws-fullstack-backend/"`
+- Set up your `PYTHONPATH` environment variable: `export PYTHONPATH="the-directory-where-this-project-lives"`
 - Set up your `FLASK_APP` environment variable: `export FLASK_APP=main.py`
 - (Optional) Enable [flask debugging](https://flask.palletsprojects.com/en/1.1.x/quickstart/#debug-mode): `export FLASK_ENV=development`
 - Run the flask project: `flask run`
+
+> Pro-tip: Store these commands in a bash profile e.g. `~/.bashrc`
