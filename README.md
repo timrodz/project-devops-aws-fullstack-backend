@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-This project uses a [Makefile](makefile) to help you sort out everything you might want.
+This project uses a [Makefile](Makefile) to help you sort out everything you might want.
 
 **Disclaimers**
 
